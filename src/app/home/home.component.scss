@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+@keyframes fade {
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+.carrousel {
+	height: 90vh;
+	position: relative;
+	.img {
+		height: 100%;
+		width: 100%;
+		// padding: 0 45px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		background-color: $secondColor;
+
+		//Efecto de carrousel
+		//JS
+		transition-property: opacity;
+		transition-duration: 2.5s;
+		opacity: 0;
+		&.active {
+			opacity: 1;
+		}
+
+		// opacity: 0;
+
+		img {
+			height: 100%;
+			width: 90%;
+			object-fit: cover;
+		}
+
+	}
+}
