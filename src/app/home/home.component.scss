@@ -1,11 +1,11 @@
 @import "../../variables.scss";
 
 @keyframes fade {
-	from{
+	from {
 		opacity: 0;
 	}
 
-	to{
+	to {
 		opacity: 1;
 	}
 }
@@ -16,20 +16,15 @@
 	.img {
 		height: 100%;
 		width: 100%;
-		// padding: 0 45px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-
 		position: absolute;
 		top: 0;
 		left: 0;
-
 		background-color: $secondColor;
 
-		//Efecto de carrousel
-		//JS
 		transition-property: opacity;
 		transition-duration: 2.5s;
 		opacity: 0;
@@ -37,11 +32,9 @@
 			opacity: 1;
 		}
 
-		// opacity: 0;
-
 		img {
 			height: 100%;
-			width: 90%;
+			width: 98%;
 			object-fit: cover;
 		}
 
