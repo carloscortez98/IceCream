@@ -10,9 +10,18 @@
 	}
 }
 
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: $secondColor;
+}
+
 .carrousel {
 	height: 90vh;
 	position: relative;
+	margin-bottom: 5vh;
+
 	.img {
 		height: 100%;
 		width: 100%;
@@ -23,7 +32,6 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $secondColor;
 
 		transition-property: opacity;
 		transition-duration: 2.5s;
@@ -34,9 +42,28 @@
 
 		img {
 			height: 100%;
-			width: 98%;
+			width: 100%;
 			object-fit: cover;
 		}
 
+	}
+}
+
+.home-body {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	.box {
+		width: 40%;
+		padding: $boxPadding;
+
+		p {
+			color: black;
+			text-align: center;
+			font-size: 1.2rem;
+			line-height: 1.6;
+		}
 	}
 }
