@@ -18,7 +18,7 @@
 
 
 	.carrousel {
-		height: 90vh;
+		height: 88vh;
 		position: relative;
 		margin-bottom: 5vh;
 
@@ -132,6 +132,60 @@
 				span {
 					width: 100%;
 					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.content {
+
+		.carrousel {
+			margin-bottom: 3vh;
+		}
+
+		.home-body {
+			height: auto;
+			flex-direction: column;
+			align-items: center;
+
+			.box {
+				width: 80%;
+				margin-bottom: 3vh;
+
+				h1 {
+					margin-bottom: 10px;
+				}
+
+				p {
+					font-size: 1rem;
+					line-height: 1.2;
+				}
+			}
+		}
+
+		.images {
+			height: auto;
+			flex-direction: column;
+
+			.card {
+				width: 85%;
+				margin-bottom: 3vh;
+
+				.img-box {
+					height: 85%;
+					overflow: hidden;
+				}
+
+				.description {
+
+					span {
+						padding-top: 1vh;
+						padding-bottom: 1vh;
+						font-size: 1rem;
+						line-height: 1.2;
+					}
 				}
 			}
 		}

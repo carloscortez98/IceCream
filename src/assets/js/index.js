@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		document.querySelector("#desplegableP").classList.toggle("active")
 	}
 
+	document.querySelector("#menuButton").onclick = function () {
+		document.querySelector("#showMenu").classList.toggle("open")
+	}
+
 	const imgs = document.querySelectorAll(".carrousel .img")
 
 	setInterval( ()=> {

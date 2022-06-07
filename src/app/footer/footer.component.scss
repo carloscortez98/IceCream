@@ -64,3 +64,47 @@
     margin-bottom: 2vh;
   }
 }
+
+@media (max-width: 360px) {
+  .footer-div {
+    height: auto;
+    justify-content: center;
+
+    .data {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .box {
+        width: 85%;
+        margin-top: 2vh;
+
+        h1 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.2;
+        }
+      }
+
+      .social {
+
+        .links {
+          justify-content: space-evenly;
+          align-items: flex-start;
+
+          div {
+            margin-bottom: 2vh;
+          }
+        }
+      }
+    }
+
+    .developer {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    }
+  }
+}
