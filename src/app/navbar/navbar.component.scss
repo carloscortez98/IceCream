@@ -83,7 +83,7 @@ header {
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   header {
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@ header {
         padding: 10px 10px 10px 30px;
         font-size: 1.1rem;
         text-align: left;
-        
+
         &:hover {
           transform: none;
         }
